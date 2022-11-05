@@ -37,15 +37,15 @@ public class Main {
     public static void main(String[] args) throws IllegalAccessException, IOException {
 //        Scanner console = new Scanner(System.in);
         String dataFormatExceprionString = "###, hhhhh, jjjjj, 9999999, &&&, )))))\n";
-        String dateFormatExceprionString = "01-01-2000 m Ivanov Ivan 89123455 Ivanovich\n";
-        String incorrectNumberOfWordsString = "01-01-2000 m Chernov Boris m 89123455 Vladimirovich\n";
-        String nullDataInClassException = "01-01-2000 m Chernov Boris m Vladimirovich\n";
+        String dateFormatExceprionString = "10-10-1960 m Chernov Boris 76493 Vladimirovich\n";
+        String incorrectNumberOfWordsString = "10.10.1960 m Chernov Boris m 76493 Vladimirovich\n";
+        String nullDataInClassException = "10.10.1960 m Chernov Boris m Vladimirovich\n";
 
-        String inputString = "Ivanov Pert Ivanovich 29.03.1990 1234567 m\n" +
+        String inputString = "Chernov Pert Ivanovich 29.03.1990 1234567 m\n" +
                 "  20.01.1992 Chernova Irina  Pavlovna 76543213 f   \n" +
                 "m 03.07.1987 6543217   Lisin Ivan Vladimirovich\n" +
                 "Kolobkov 09.08.1979 Igor m 7890643 Sergeevich\n" +
-                "10.10.1960 m Ivanov Ivan 89123455 Ivanovich\n";
+                "10.10.1960 m Chernov Boris 76493 Vladimirovich\n";
 
         PersonServiceInt personService = new PersonService();
         Scanner console = new Scanner(inputString);
